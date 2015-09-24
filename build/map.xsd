@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="TestObjectMap" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tom="TestObjectMap">
+
+    <complexType name="xTestObject">
+    	<sequence>
+    		<element name="image" type="tom:xImage"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    	<attribute name="name" type="string" use="required"></attribute>
+    	<attribute name="className" type="tom:xClassName"
+    		use="required">
+    	</attribute>
+    	<attribute name="driverName" type="tom:xDriverName"
+    		use="required">
+    	</attribute>
+    	<attribute name="target" type="string" use="optional"></attribute>
+    	<attribute name="description" type="string" use="optional"></attribute>
+        <attribute name="enabled" type="boolean"></attribute>
+        <attribute name="errState" type="int" use="optional"></attribute>
+    	<attribute name="errDescription" type="string" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="xImage">
+        <attribute name="imgRecognition" type="boolean" use="required"></attribute>
+        <attribute name="fileName" type="string" use="required"></attribute>
+    	<attribute name="ocrText" type="string"></attribute>
+    	<attribute name="similarity" type="float" use="optional"></attribute>
+    	<attribute name="offsetX" type="int" use="optional"></attribute>
+    	<attribute name="offsetY" type="int" use="optional"></attribute>
+    	<attribute name="tag" type="string" use="optional"></attribute>
+    </complexType>
+
+    <element name="xTestObjectMap">
+    	<complexType>
+    		<sequence>
+    			<element name="Window" type="tom:xWindow" minOccurs="0"
+    				maxOccurs="unbounded">
+    			</element>
+    		</sequence>
+    		<attribute name="parentClassName" type="string"
+    			use="optional">
+    		</attribute>
+    		<attribute name="scriptClassPath" type="string"
+    			use="optional">
+    		</attribute>
+    		<attribute name="errState" type="int" use="optional"></attribute>
+    		<attribute name="errDescription" type="string" use="optional"></attribute>
+    	</complexType></element>
+
+
+    <simpleType name="xDriverName">
+    	<restriction base="string">
+    		<enumeration value="WebDriver"></enumeration>
+    		<enumeration value="Sikuli"></enumeration>
+    		<enumeration value="AutoIt"></enumeration>
+    	</restriction>
+    </simpleType>
+    
+    <simpleType name="xOperation">
+    	<restriction base="string">
+    		<enumeration value="click"></enumeration>
+    		<enumeration value="setText"></enumeration>
+    		<enumeration value="select"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="xClassName">
+    	<restriction base="string">
+    		<enumeration value="Button"></enumeration>
+    		<enumeration value="TextBox"></enumeration>
+    		<enumeration value="ComboBox"></enumeration>
+    		<!--<enumeration value="List"></enumeration>
+    		<enumeration value="Table"></enumeration>-->
+    		<enumeration value="Window"></enumeration>
+    		<enumeration value="Image"></enumeration>
+    		<enumeration value="Element"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="xWindow">
+    	<sequence>
+    		<element name="testObject" type="tom:xTestObject"
+    			minOccurs="0" maxOccurs="unbounded">
+    		</element>
+    	</sequence>
+    	<attribute name="name" type="string" use="required"></attribute>
+    	<attribute name="driverName" type="tom:xDriverName"
+    		use="required">
+    	</attribute>
+    	<attribute name="target" type="string" use="optional"></attribute>
+    	<attribute name="description" type="string" use="optional"></attribute>
+        <attribute name="enabled" type="boolean"></attribute>
+        <attribute name="errState" type="int" use="optional"></attribute>
+    	<attribute name="errDescription" type="string" use="optional"></attribute>
+    </complexType>
+</schema>

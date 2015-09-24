@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="Settings" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:stg="Settings">
+
+    <element name="xSettings">
+    	<complexType>
+    		<sequence>
+    			<element name="RecentProjects" type="stg:xRecentProject"
+    				minOccurs="0" maxOccurs="unbounded">
+    			</element>
+    		</sequence>
+    		<attribute name="RecentProjectsCount" type="int"></attribute>
+    		<attribute name="RecentRootDirectory" type="string"></attribute>
+    		<attribute name="PromptBeforeRemoveItem" type="boolean"></attribute>
+    	</complexType></element>
+
+    <complexType name="xRecentProject">
+    	<attribute name="Path" type="string"></attribute>
+    	<attribute name="ModifiedDate" type="long"></attribute>
+    </complexType>
+</schema>
