@@ -1,7 +1,7 @@
 <root>
   <facet id="jpt.jaxb">
     <node name="classgen">
-      <attribute name="package" value="tom.map"/>
+      <attribute name="package" value="fp.forevo.xml.settings"/>
     </node>
     <node name="libprov">
       <attribute name="provider-id" value="jaxb-jre-library-provider"/>
@@ -11,7 +11,13 @@
     </node>
     <node name="schemas">
       <node name="schema-1">
-        <attribute name="location" value="platform:/resource/FP_FOREVO_XML/build/map.xsd"/>
+        <attribute name="location" value="platform:/resource/ForEVO_XML/build/map.xsd"/>
+      </node>
+      <node name="schema-2">
+        <attribute name="location" value="platform:/resource/ForEVO_XML/build/project.xsd"/>
+      </node>
+      <node name="schema-3">
+        <attribute name="location" value="platform:/resource/ForEVO_XML/build/settings.xsd"/>
       </node>
     </node>
   </facet>
