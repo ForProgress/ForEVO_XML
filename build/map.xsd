@@ -22,13 +22,17 @@
     </complexType>
 
     <complexType name="xImage">
-        <attribute name="imgRecognition" type="boolean" use="required"></attribute>
-        <attribute name="fileName" type="string" use="required"></attribute>
-    	<attribute name="ocrText" type="string"></attribute>
-    	<attribute name="similarity" type="float" use="optional"></attribute>
+    	<attribute name="imgRecognition" type="boolean"
+    		use="required">
+    	</attribute>
+    	<attribute name="fileName" type="string" use="required"></attribute>
+    	<attribute name="ocrText" type="string"></attribute>
+
+        <attribute name="textArea" type="string"></attribute>
+        <attribute name="similarity" type="float" use="optional"></attribute>
     	<attribute name="offsetX" type="int" use="optional"></attribute>
     	<attribute name="offsetY" type="int" use="optional"></attribute>
-    	<attribute name="tag" type="string" use="optional"></attribute>
+    	<attribute name="tag" type="string" use="optional"></attribute>
     </complexType>
 
     <element name="xTestObjectMap">
@@ -70,8 +74,8 @@
     		<enumeration value="Button"></enumeration>
     		<enumeration value="TextBox"></enumeration>
     		<enumeration value="ComboBox"></enumeration>
-    		<!--<enumeration value="List"></enumeration>
-    		<enumeration value="Table"></enumeration>-->
+    		<enumeration value="List"></enumeration>
+    		<enumeration value="Table"></enumeration>
     		<enumeration value="Window"></enumeration>
     		<enumeration value="Image"></enumeration>
     		<enumeration value="Element"></enumeration>
