@@ -7,3 +7,4 @@
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "Settings", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package fp.forevo.xml.settings;
+

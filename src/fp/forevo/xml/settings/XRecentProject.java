@@ -5,7 +5,6 @@
 // Generated on: 2015.09.25 at 09:53:15 AM CEST 
 //
 
-
 package fp.forevo.xml.settings;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for xRecentProject complex type.
+ * <p>
+ * Java class for xRecentProject complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="xRecentProject">
@@ -36,57 +37,51 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "xRecentProject")
 public class XRecentProject {
 
-    @XmlAttribute(name = "Path")
-    protected String path;
-    @XmlAttribute(name = "ModifiedDate")
-    protected Long modifiedDate;
+	@XmlAttribute(name = "Path")
+	protected String path;
+	@XmlAttribute(name = "ModifiedDate")
+	protected Long modifiedDate;
 
-    /**
-     * Gets the value of the path property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPath() {
-        return path;
-    }
+	/**
+	 * Gets the value of the path property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPath() {
+		return path;
+	}
 
-    /**
-     * Sets the value of the path property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPath(String value) {
-        this.path = value;
-    }
+	/**
+	 * Sets the value of the path property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPath(String value) {
+		this.path = value;
+	}
 
-    /**
-     * Gets the value of the modifiedDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getModifiedDate() {
-        return modifiedDate;
-    }
+	/**
+	 * Gets the value of the modifiedDate property.
+	 * 
+	 * @return possible object is {@link Long }
+	 * 
+	 */
+	public Long getModifiedDate() {
+		return modifiedDate;
+	}
 
-    /**
-     * Sets the value of the modifiedDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setModifiedDate(Long value) {
-        this.modifiedDate = value;
-    }
+	/**
+	 * Sets the value of the modifiedDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Long }
+	 * 
+	 */
+	public void setModifiedDate(Long value) {
+		this.modifiedDate = value;
+	}
 
 }

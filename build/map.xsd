@@ -74,8 +74,8 @@
     		<enumeration value="Button"></enumeration>
     		<enumeration value="TextBox"></enumeration>
     		<enumeration value="ComboBox"></enumeration>
-    		<enumeration value="List"></enumeration>
-    		<enumeration value="Table"></enumeration>
+    		<!--<enumeration value="List"></enumeration>-->
+    		<!--<enumeration value="Table"></enumeration>-->
     		<enumeration value="Window"></enumeration>
     		<enumeration value="Image"></enumeration>
     		<enumeration value="Element"></enumeration>
