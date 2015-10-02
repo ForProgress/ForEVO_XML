@@ -11,8 +11,8 @@
     		<attribute name="RecentProjectsCount" type="int"></attribute>
     		<attribute name="RecentRootDirectory" type="string"></attribute>
     		<attribute name="PromptBeforeRemoveItem" type="boolean"></attribute>
-            <attribute name="AskForImageFileName" type="boolean"></attribute>
-            <attribute name="WindowLeft" type="int"></attribute>
+    		<attribute name="AskForImageFileName" type="boolean"></attribute>
+    		<attribute name="WindowLeft" type="int"></attribute>
     		<attribute name="WindowTop" type="int"></attribute>
     		<attribute name="WindowWidth" type="int"></attribute>
     		<attribute name="WindowHeight" type="int"></attribute>
@@ -20,6 +20,7 @@
     		<attribute name="VerticalSashPercent" type="int"></attribute>
     		<attribute name="HorizontalSashLimit" type="int"></attribute>
     		<attribute name="HorizontalSashPercent" type="int"></attribute>
+    		<attribute name="DelayBeforeCapture" type="int"></attribute>
     	</complexType></element>
 
     <complexType name="xRecentProject">
