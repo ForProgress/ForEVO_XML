@@ -28,11 +28,13 @@
     	<attribute name="fileName" type="string" use="required"></attribute>
     	<attribute name="ocrText" type="string"></attribute>
 
-        <attribute name="textArea" type="string"></attribute>
-        <attribute name="similarity" type="float" use="optional"></attribute>
-    	<attribute name="offsetX" type="int" use="optional"></attribute>
+    	<attribute name="textArea" type="string"></attribute>
+    	<attribute name="similarity" type="float" use="optional"></attribute>
+        <attribute name="shift" type="string" use="optional"></attribute>
+        <attribute name="offsetX" type="int" use="optional"></attribute>
     	<attribute name="offsetY" type="int" use="optional"></attribute>
-    	<attribute name="tag" type="string" use="optional"></attribute>
+    	<attribute name="tag" type="string" use="optional"></attribute>
+
     </complexType>
 
     <element name="xTestObjectMap">
