@@ -4,23 +4,24 @@
     <element name="xSettings">
     	<complexType>
     		<sequence>
-    			<element name="RecentProjects" type="stg:xRecentProject"
+    			<element name="recentProjects" type="stg:xRecentProject"
     				minOccurs="0" maxOccurs="unbounded">
     			</element>
     		</sequence>
-    		<attribute name="RecentProjectsCount" type="int"></attribute>
-    		<attribute name="RecentRootDirectory" type="string"></attribute>
-    		<attribute name="PromptBeforeRemoveItem" type="boolean"></attribute>
-    		<attribute name="AskForImageFileName" type="boolean"></attribute>
-    		<attribute name="WindowLeft" type="int"></attribute>
-    		<attribute name="WindowTop" type="int"></attribute>
-    		<attribute name="WindowWidth" type="int"></attribute>
-    		<attribute name="WindowHeight" type="int"></attribute>
-    		<attribute name="VerticalSashLimit" type="int"></attribute>
-    		<attribute name="VerticalSashPercent" type="int"></attribute>
-    		<attribute name="HorizontalSashLimit" type="int"></attribute>
-    		<attribute name="HorizontalSashPercent" type="int"></attribute>
-    		<attribute name="DelayBeforeCapture" type="int"></attribute>
+    		<attribute name="recentProjectsCount" type="int"></attribute>
+    		<attribute name="recentRootDirectory" type="string"></attribute>
+    		<attribute name="promptBeforeRemoveItem" type="boolean"></attribute>
+    		<attribute name="askForImageFileName" type="boolean"></attribute>
+    		<attribute name="windowLeft" type="int"></attribute>
+    		<attribute name="windowTop" type="int"></attribute>
+    		<attribute name="windowWidth" type="int"></attribute>
+    		<attribute name="windowHeight" type="int"></attribute>
+    		<attribute name="verticalSashLimit" type="int"></attribute>
+    		<attribute name="verticalSashPercent" type="int"></attribute>
+    		<attribute name="horizontalSashLimit" type="int"></attribute>
+    		<attribute name="horizontalSashPercent" type="int"></attribute>
+    		<attribute name="delayBeforeCapture" type="int"></attribute>
+    		<attribute name="defaultParentClass" type="string"></attribute>
     	</complexType></element>
 
     <complexType name="xRecentProject">
