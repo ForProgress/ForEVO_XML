@@ -1,7 +1,7 @@
 <root>
   <facet id="jpt.jaxb">
     <node name="classgen">
-      <attribute name="package" value="fp.forevo.xml.settings"/>
+      <attribute name="package" value="fp.forevo.xml.project"/>
     </node>
     <node name="libprov">
       <attribute name="provider-id" value="jaxb-jre-library-provider"/>
@@ -12,6 +12,9 @@
     <node name="schemas">
       <node name="schema-1">
         <attribute name="location" value="platform:/resource/ForEVO_XML/build/settings.xsd"/>
+      </node>
+      <node name="schema-2">
+        <attribute name="location" value="platform:/resource/ForEVO_XML/build/project.xsd"/>
       </node>
     </node>
   </facet>
