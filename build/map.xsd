@@ -33,7 +33,7 @@
         <attribute name="shift" type="string" use="optional"></attribute>
         <attribute name="offsetX" type="int" use="optional"></attribute>
     	<attribute name="offsetY" type="int" use="optional"></attribute>
-    	<attribute name="tag" type="string" use="optional"></attribute>
+    	<attribute name="tagUids" type="string" use="optional"></attribute>
 
     </complexType>
 
