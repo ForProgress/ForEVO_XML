@@ -22,6 +22,7 @@
     		<attribute name="horizontalSashPercent" type="int"></attribute>
     		<attribute name="delayBeforeCapture" type="int"></attribute>
     		<attribute name="defaultParentClass" type="string"></attribute>
+    		<attribute name="robotFrameworkIntegration" type="boolean"></attribute>
     	</complexType></element>
 
     <complexType name="xRecentProject">
