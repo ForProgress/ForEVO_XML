@@ -6,7 +6,7 @@
 //
 
 
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the fp.forevo.xml.map package. 
+ * generated in the fp.forevo.xml.repo package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,18 +30,18 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: fp.forevo.xml.map
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: fp.forevo.xml.repo
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link XTestObjectMap }
+     * Create an instance of {@link XTestObjectRepo }
      * 
      */
-    public XTestObjectMap createXTestObjectMap() {
-        return new XTestObjectMap();
+    public XTestObjectRepo createXTestObjectRepo() {
+        return new XTestObjectRepo();
     }
 
     /**

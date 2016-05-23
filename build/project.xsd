@@ -5,7 +5,7 @@
 	<element name="xProject">
 		<complexType>
 			<sequence>
-				<element name="mapFilePath" type="string"
+				<element name="repoFilePath" type="string"
 					maxOccurs="unbounded" minOccurs="0">
 				</element>
 				<element name="tags" type="proj:xTag" maxOccurs="unbounded" minOccurs="0"></element>

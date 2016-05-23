@@ -6,7 +6,7 @@
 //
 
 
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,20 +17,19 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for xTestObject complex type.
+ * <p>Java class for xWindow complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="xTestObject">
+ * &lt;complexType name="xWindow">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="image" type="{TestObjectMap}xImage" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="testObject" type="{TestObjectRepo}xTestObject" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="className" use="required" type="{TestObjectMap}xClassName" />
- *       &lt;attribute name="driverName" use="required" type="{TestObjectMap}xDriverName" />
+ *       &lt;attribute name="driverName" use="required" type="{TestObjectRepo}xDriverName" />
  *       &lt;attribute name="target" type="{http://www.w3.org/2001/XMLSchema}string" />
  *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" />
  *       &lt;attribute name="enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" />
@@ -44,16 +43,14 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "xTestObject", propOrder = {
-    "image"
+@XmlType(name = "xWindow", propOrder = {
+    "testObject"
 })
-public class XTestObject {
+public class XWindow {
 
-    protected List<XImage> image;
+    protected List<XTestObject> testObject;
     @XmlAttribute(name = "name", required = true)
     protected String name;
-    @XmlAttribute(name = "className", required = true)
-    protected XClassName className;
     @XmlAttribute(name = "driverName", required = true)
     protected XDriverName driverName;
     @XmlAttribute(name = "target")
@@ -68,32 +65,32 @@ public class XTestObject {
     protected String errDescription;
 
     /**
-     * Gets the value of the image property.
+     * Gets the value of the testObject property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the image property.
+     * This is why there is not a <CODE>set</CODE> method for the testObject property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getImage().add(newItem);
+     *    getTestObject().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link XImage }
+     * {@link XTestObject }
      * 
      * 
      */
-    public List<XImage> getImage() {
-        if (image == null) {
-            image = new ArrayList<XImage>();
+    public List<XTestObject> getTestObject() {
+        if (testObject == null) {
+            testObject = new ArrayList<XTestObject>();
         }
-        return this.image;
+        return this.testObject;
     }
 
     /**
@@ -118,30 +115,6 @@ public class XTestObject {
      */
     public void setName(String value) {
         this.name = value;
-    }
-
-    /**
-     * Gets the value of the className property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XClassName }
-     *     
-     */
-    public XClassName getClassName() {
-        return className;
-    }
-
-    /**
-     * Sets the value of the className property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XClassName }
-     *     
-     */
-    public void setClassName(XClassName value) {
-        this.className = value;
     }
 
     /**

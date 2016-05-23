@@ -5,5 +5,5 @@
 // Generated on: 2015.12.07 at 02:12:30 PM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "TestObjectMap", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package fp.forevo.xml.map;
+@javax.xml.bind.annotation.XmlSchema(namespace = "TestObjectRepo", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+package fp.forevo.xml.repo;

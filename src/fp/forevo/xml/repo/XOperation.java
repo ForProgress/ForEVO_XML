@@ -6,7 +6,7 @@
 //
 
 
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
@@ -14,43 +14,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for xClassName.
+ * <p>Java class for xOperation.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="xClassName">
+ * &lt;simpleType name="xOperation">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Button"/>
- *     &lt;enumeration value="TextBox"/>
- *     &lt;enumeration value="ComboBox"/>
- *     &lt;enumeration value="Window"/>
- *     &lt;enumeration value="Image"/>
- *     &lt;enumeration value="Element"/>
+ *     &lt;enumeration value="click"/>
+ *     &lt;enumeration value="setText"/>
+ *     &lt;enumeration value="select"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
  * 
  */
-@XmlType(name = "xClassName")
+@XmlType(name = "xOperation")
 @XmlEnum
-public enum XClassName {
+public enum XOperation {
 
-    @XmlEnumValue("Button")
-    BUTTON("Button"),
-    @XmlEnumValue("TextBox")
-    TEXT_BOX("TextBox"),
-    @XmlEnumValue("ComboBox")
-    COMBO_BOX("ComboBox"),
-    @XmlEnumValue("Window")
-    WINDOW("Window"),
-    @XmlEnumValue("Image")
-    IMAGE("Image"),
-    @XmlEnumValue("Element")
-    ELEMENT("Element");
+    @XmlEnumValue("click")
+    CLICK("click"),
+    @XmlEnumValue("setText")
+    SET_TEXT("setText"),
+    @XmlEnumValue("select")
+    SELECT("select");
     private final String value;
 
-    XClassName(String v) {
+    XOperation(String v) {
         value = v;
     }
 
@@ -58,8 +49,8 @@ public enum XClassName {
         return value;
     }
 
-    public static XClassName fromValue(String v) {
-        for (XClassName c: XClassName.values()) {
+    public static XOperation fromValue(String v) {
+        for (XOperation c: XOperation.values()) {
             if (c.value.equals(v)) {
                 return c;
             }
