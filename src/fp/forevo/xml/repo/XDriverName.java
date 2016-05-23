@@ -6,7 +6,7 @@
 //
 
 
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;

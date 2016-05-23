@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema targetNamespace="TestObjectMap" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tom="TestObjectMap">
+<schema targetNamespace="TestObjectRepo" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tom="TestObjectRepo">
 
     <complexType name="xTestObject">
     	<sequence>
@@ -37,7 +37,7 @@
 
     </complexType>
 
-    <element name="xTestObjectMap">
+    <element name="xTestObjectRepo">
     	<complexType>
     		<sequence>
     			<element name="Window" type="tom:xWindow" minOccurs="0"
