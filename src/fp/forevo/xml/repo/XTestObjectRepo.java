@@ -6,7 +6,7 @@
 //
 
 
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ import javax.xml.bind.annotation.XmlType;
     "window"
 })
 @XmlRootElement(name = "xTestObjectMap")
-public class XTestObjectMap {
+public class XTestObjectRepo {
 
     @XmlElement(name = "Window")
     protected List<XWindow> window;

@@ -6,7 +6,7 @@
 //
 
 
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -37,11 +37,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link XTestObjectMap }
+     * Create an instance of {@link XTestObjectRepo }
      * 
      */
-    public XTestObjectMap createXTestObjectMap() {
-        return new XTestObjectMap();
+    public XTestObjectRepo createXTestObjectRepo() {
+        return new XTestObjectRepo();
     }
 
     /**

@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "TestObjectMap", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package fp.forevo.xml.map;
+package fp.forevo.xml.repo;
